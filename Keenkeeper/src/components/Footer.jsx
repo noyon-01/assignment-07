@@ -1,11 +1,12 @@
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import logo from "../assets/logo-xl.png";
 
 const Footer = () => {
   return (
     <div className="bg-[#244D3F] text-white text-center">
-      <h1 className="text-5xl font-bold pt-20 pb-4">KeenKeeper</h1>
+      <img className="pt-20 pb-4 mx-auto" src={logo} />
       <p className="text-[16px]">
         <small>
           Your personal shelf of meaningful connections. Browse, tend, and
