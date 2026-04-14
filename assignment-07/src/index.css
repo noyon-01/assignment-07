@@ -5,3 +5,8 @@
 *{
     font-family: "Geist", sans-serif;
 }
+
+.my-divider::before,
+.my-divider::after {
+  background-color: #0f5e42;
+}
