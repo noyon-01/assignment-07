@@ -7,7 +7,7 @@
     "days_since_contact": 18,
     "status": "almost due",
     "tags": ["college", "close friend"],
-    "bio": "Met during freshman orientation. We backpacked through Southeast Asia after graduation and have been inseparable ever since.",
+    "bio": "Met during freshman orientation.",
     "goal": 14,
     "next_due_date": "2026-04-10"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 5,
     "status": "on_track",
     "tags": ["work", "basketball"],
-    "bio": "My first manager at the startup. Taught me everything about product thinking. We play pickup basketball every other weekend.",
+    "bio": "My first manager at the startup.",
     "goal": 7,
     "next_due_date": "2026-04-18"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 32,
     "status": "overdue",
     "tags": ["childhood", "art"],
-    "bio": "Grew up three houses down from each other. Our families still have dinner together every Thanksgiving. She's now a ceramics artist in Stockholm.",
+    "bio": "Grew up three houses down from each other.",
     "goal": 21,
     "next_due_date": "2026-04-05"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 10,
     "status": "on_track",
     "tags": ["college", "roommate"],
-    "bio": "Shared a tiny dorm room junior year. We bonded over bad instant noodles and jazz records. He plays guitar in a band on weekends.",
+    "bio": "Shared a tiny dorm room junior year.",
     "goal": 14,
     "next_due_date": "2026-04-19"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 3,
     "status": "on_track",
     "tags": ["work", "close friend"],
-    "bio": "We joined the same company on the same day and have been each other's sounding boards ever since. We run a tiny online book club together.",
+    "bio": "We joined the same company on the same day. ",
     "goal": 7,
     "next_due_date": "2026-04-20"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 60,
     "status": "almost due",
     "tags": ["research", "chess"],
-    "bio": "Lab partners during my master's program. Brilliant mind for data science. Life got busy after he moved to Toronto, but I always think of him.",
+    "bio": "Lab partners during my master's program.",
     "goal": 30,
     "next_due_date": "2026-03-22"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 8,
     "status": "on_track",
     "tags": ["close friend", "cooking"],
-    "bio": "Moved in next door two years ago. We started a Sunday dinner tradition — she teaches me Japanese recipes and I show her mine.",
+    "bio": "Moved in next door two years ago.",
     "goal": 10,
     "next_due_date": "2026-04-17"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 45,
     "status": "overdue",
     "tags": ["high school", "sports"],
-    "bio": "Best friend from high school football days. He runs a landscaping business now in his hometown. Always makes me laugh harder than anyone.",
+    "bio": "Best friend from high school football days.",
     "goal": 30,
     "next_due_date": "2026-04-01"
   },
@@ -103,7 +103,7 @@
     "days_since_contact": 14,
     "status": "on_track",
     "tags": ["college", "study group"],
-    "bio": "Met in a brutal organic chemistry study group. We survived together. She's a doctor now, and we hike once a month to decompress.",
+    "bio": "Met in a brutal organic chemistry study group.",
     "goal": 14,
     "next_due_date": "2026-04-22"
   },
@@ -115,7 +115,7 @@
     "days_since_contact": 2,
     "status": "almost due",
     "tags": ["work", "close friend"],
-    "bio": "Co-founded a side project together that never quite took off, but the experience made us lifelong friends. We still do weekly idea brainstorms over coffee.",
+    "bio": "Co-founded a side project together that never quite.",
     "goal": 7,
     "next_due_date": "2026-04-20"
   },
@@ -127,7 +127,7 @@
     "days_since_contact": 90,
     "status": "overdue",
     "tags": ["travel", "conference"],
-    "bio": "Met at a design conference in Berlin three years ago. Instant connection over a shared dislike of the keynote speaker. She runs a UX studio in Dakar.",
+    "bio": "Met at a design conference in Berlin three years ago.",
     "goal": 45,
     "next_due_date": "2026-03-15"
   },
@@ -139,7 +139,7 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["college", "gaming"],
-    "bio": "Bonded in the campus computer lab over late-night coding sessions. He's a senior engineer at a gaming studio now. We still do online game nights.",
+    "bio": "Bonded in the campus computer lab over late-night.",
     "goal": 14,
     "next_due_date": "2026-04-12"
   }

@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("data.json"),
+        loader: () => fetch("/data.json"),
         Component: Home,
       },
       {
@@ -25,7 +25,8 @@ export const router = createBrowserRouter([
         Component: Starts,
       },
       {
-        path: "/friendDetails/:id",
+        path: "/friendDetails/:userId",
+        loader: () => fetch("/data.json"),
         Component: FriendDetails,
       },
     ],

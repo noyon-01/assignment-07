@@ -27,15 +27,15 @@ const Home = () => {
           <p className="text-lg text-[#64748B]">Total Friends</p>
         </div>
         <div className="py-10 rounded bg-white shadow">
-          <p className="text-3xl font-semibold text-[#244D3F]">10</p>
+          <p className="text-3xl font-semibold text-[#244D3F]">3</p>
           <p className="text-lg text-[#64748B]">Total Friends</p>
         </div>
         <div className="py-10 rounded bg-white shadow">
-          <p className="text-3xl font-semibold text-[#244D3F]">10</p>
+          <p className="text-3xl font-semibold text-[#244D3F]">6</p>
           <p className="text-lg text-[#64748B]">Total Friends</p>
         </div>
         <div className="py-10 rounded bg-white shadow">
-          <p className="text-3xl font-semibold text-[#244D3F]">10</p>
+          <p className="text-3xl font-semibold text-[#244D3F]">12</p>
           <p className="text-lg text-[#64748B]">Total Friends</p>
         </div>
       </div>
