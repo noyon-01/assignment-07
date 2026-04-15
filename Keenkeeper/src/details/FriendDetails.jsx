@@ -64,11 +64,15 @@ const FriendDetails = () => {
       <div className="w-12/12 lg:w-8/12 space-y-5">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="py-12 rounded bg-white shadow">
-            <p className="text-3xl font-semibold text-[#244D3F]">{expectedData.days_since_contact}</p>
+            <p className="text-3xl font-semibold text-[#244D3F]">
+              {expectedData.days_since_contact}
+            </p>
             <p className="text-lg text-[#64748B]">Days Since Contact</p>
           </div>
           <div className="py-12 rounded bg-white shadow">
-            <p className="text-3xl font-semibold text-[#244D3F]">{expectedData.goal}</p>
+            <p className="text-3xl font-semibold text-[#244D3F]">
+              {expectedData.goal}
+            </p>
             <p className="text-lg text-[#64748B]">Goal (Days)</p>
           </div>
           <div className="py-12 rounded bg-white shadow">
@@ -89,7 +93,10 @@ const FriendDetails = () => {
           <div>
             <p className="text-[#64748B] text-lg font-medium">
               Connect every
-              <strong className="text-black font-bold"> {expectedData.goal} days</strong>
+              <strong className="text-black font-bold">
+                {" "}
+                {expectedData.goal} days
+              </strong>
             </p>
           </div>
         </div>
