@@ -16,7 +16,7 @@ const FriendDetails = () => {
     (friend) => friend.id === Number(userId),
   );
   const { name, picture, tags, status, bio, email } = expectedData;
-  const { handleCallData, storedVideoData, handleTextData, handleVideoData } =
+  const { handleCallData, handleTextData, handleVideoData } =
     useContext(UserContext);
 
   return (
@@ -64,16 +64,16 @@ const FriendDetails = () => {
       <div className="w-8/12 space-y-5">
         <div className="grid grid-cols-3 gap-6 text-center">
           <div className="py-12 rounded bg-white shadow">
-            <p className="text-3xl font-semibold text-[#244D3F]">62</p>
+            <p className="text-3xl font-semibold text-[#244D3F]">{expectedData.days_since_contact}</p>
             <p className="text-lg text-[#64748B]">Days Since Contact</p>
           </div>
           <div className="py-12 rounded bg-white shadow">
-            <p className="text-3xl font-semibold text-[#244D3F]">30</p>
+            <p className="text-3xl font-semibold text-[#244D3F]">{expectedData.goal}</p>
             <p className="text-lg text-[#64748B]">Goal (Days)</p>
           </div>
           <div className="py-12 rounded bg-white shadow">
             <p className="text-3xl font-semibold text-[#244D3F]">
-              Feb 27, 2026
+              {expectedData.next_due_date}
             </p>
             <p className="text-lg text-[#64748B]">Next Due</p>
           </div>
@@ -88,8 +88,8 @@ const FriendDetails = () => {
           </div>
           <div>
             <p className="text-[#64748B] text-lg font-medium">
-              Connect every{" "}
-              <strong className="text-black font-bold">30 days</strong>
+              Connect every
+              <strong className="text-black font-bold"> {expectedData.goal} days</strong>
             </p>
           </div>
         </div>
