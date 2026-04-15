@@ -20,8 +20,8 @@ const FriendDetails = () => {
     useContext(UserContext);
 
   return (
-    <div className="w-8/12 mx-auto py-10 flex justify-between gap-5">
-      <div className="w-4/12">
+    <div className="w-10/12 lg:w-11/12 xl:w-8/12 mx-auto py-10 flex flex-col lg:flex-row justify-between gap-5">
+      <div className="w-12/12 lg:w-4/12">
         <div className="card bg-white shadow">
           <div className="card-body items-center text-center">
             <img className="w-20 h-20 rounded-full" src={picture} alt={name} />
@@ -61,8 +61,8 @@ const FriendDetails = () => {
         </div>
       </div>
 
-      <div className="w-8/12 space-y-5">
-        <div className="grid grid-cols-3 gap-6 text-center">
+      <div className="w-12/12 lg:w-8/12 space-y-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="py-12 rounded bg-white shadow">
             <p className="text-3xl font-semibold text-[#244D3F]">{expectedData.days_since_contact}</p>
             <p className="text-lg text-[#64748B]">Days Since Contact</p>

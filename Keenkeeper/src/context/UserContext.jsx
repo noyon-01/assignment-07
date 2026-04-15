@@ -13,10 +13,10 @@ const UserProvider = ({ children }) => {
       (data) => data.id === expectedData.id,
     );
     if (isExistCallData) {
-      toast.error(`${expectedData.name} is already added in the timeline`);
+      toast.error(`${expectedData.name} Call is already added in the timeline`);
     } else {
       setStoredCallData([...storedCallData, expectedData]);
-      toast.success(`${expectedData.name} is added in the timeline`);
+      toast.success(`${expectedData.name} Call is added in the timeline`);
     }
   };
 
@@ -25,10 +25,10 @@ const UserProvider = ({ children }) => {
       (data) => data.id === expectedData.id,
     );
     if (isExistTextData) {
-      toast.error(`${expectedData.name} is already added in the timeline`);
+        toast.error(`${expectedData.name} Text is already added in the timeline`);
     } else {
       setStoredTextData([...storedTextData, expectedData]);
-      toast.success(`${expectedData.name} is added in the timeline`);
+      toast.success(`${expectedData.name} Text is added in the timeline`);
     }
   };
 
@@ -37,10 +37,10 @@ const UserProvider = ({ children }) => {
       (data) => data.id === expectedData.id,
     );
     if (isExistVideoData) {
-      toast.error(`${expectedData.name} is already added in the timeline`);
+      toast.error(`${expectedData.name}Video is already added in the timeline`);
     } else {
       setStoredVideoData([...storedVideoData, expectedData]);
-      toast.success(`${expectedData.name} is added in the timeline`);
+      toast.success(`${expectedData.name} Video is added in the timeline`);
     }
   };
 

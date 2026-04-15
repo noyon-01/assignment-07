@@ -6,7 +6,7 @@ import { GoGraph } from "react-icons/go";
 
 const Header = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar container mx-auto">
         <div className="flex-1">
           <img src={logo} />

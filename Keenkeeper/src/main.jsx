@@ -10,7 +10,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <UserProvider>
       <RouterProvider router={router}></RouterProvider>
-      <ToastContainer />
+      <ToastContainer position="top-center"/>
     </UserProvider>
   </StrictMode>,
 );

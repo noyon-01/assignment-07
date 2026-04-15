@@ -21,7 +21,7 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-4 gap-6 w-9/12 mx-auto pb-20 text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-9/12 mx-auto pb-20 text-center">
         <div className="py-10 rounded bg-white shadow">
           <p className="text-3xl font-semibold text-[#244D3F]">10</p>
           <p className="text-lg text-[#64748B]">Total Friends</p>
@@ -43,7 +43,7 @@ const Home = () => {
       <div className="w-9/12 mx-auto">
         <h3 className="text-2xl font-semibold mb-4">Your Friends</h3>
       </div>
-      <div className="w-9/12 mx-auto grid grid-cols-4 gap-4 mb-20">
+      <div className="w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-20">
         {friends.map((friend) => (
           <Card key={friend.id} friend={friend} />
         ))}
