@@ -10,8 +10,16 @@ const Timeline = () => {
     useContext(UserContext);
   const totalData =
     storedCallData.length + storedTextData.length + storedVideoData.length;
-
   const [filter, setFilter] = useState("all");
+
+  const allData = [
+    ...storedCallData.map((item) => ({ ...item, type: "call" })),
+    ...storedTextData.map((item) => ({ ...item, type: "text" })),
+    ...storedVideoData.map((item) => ({ ...item, type: "video" })),
+  ];
+
+  const filteredData =
+    filter === "all" ? allData : allData.filter((item) => item.type === filter);
 
   return (
     <div className="w-9/12 py-20 mx-auto">
@@ -51,53 +59,38 @@ const Timeline = () => {
         </div>
       ) : (
         <div className="space-y-4">
-          {(filter === "all" || filter === "call") &&
-            storedCallData.map((call) => (
-              <div
-                key={call.id}
-                className="bg-white shadow p-6 rounded flex items-center gap-2.5"
-              >
-                <img src={callImg} alt={call.name} />
-                <div>
-                  <h1>
-                    <strong>Call</strong> with {call.name}
-                  </h1>
-                  <p>{call.next_due_date}</p>
-                </div>
-              </div>
-            ))}
+          {filteredData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white shadow p-6 rounded flex items-center gap-2.5"
+            >
+              <img
+                src={
+                  item.type === "call"
+                    ? callImg
+                    : item.type === "text"
+                      ? textImg
+                      : videoImg
+                }
+                alt={item.name}
+              />
 
-          {(filter === "all" || filter === "text") &&
-            storedTextData.map((text) => (
-              <div
-                key={text.id}
-                className="bg-white shadow p-4 rounded flex items-center gap-2.5"
-              >
-                <img src={textImg} alt={text.name} />
-                <div>
-                  <h1>
-                    <strong>Text</strong> with {text.name}
-                  </h1>
-                  <p>{text.next_due_date}</p>
-                </div>
-              </div>
-            ))}
+              <div>
+                <h1 className="text-lg text-[#64748B]">
+                  <strong className="text-xl font-semibold text-black">
+                    {item.type == "call"
+                      ? "Call"
+                      : item.type == "text"
+                        ? "Text"
+                        : "Video"}
+                  </strong>{" "}
+                  with {item.name}
+                </h1>
 
-          {(filter === "all" || filter === "video") &&
-            storedVideoData.map((video) => (
-              <div
-                key={video.id}
-                className="bg-white shadow p-6 rounded flex items-center gap-2.5"
-              >
-                <img src={videoImg} alt={video.name} />
-                <div>
-                  <h1>
-                    <strong>Video</strong> with {video.name}
-                  </h1>
-                  <p>{video.next_due_date}</p>
-                </div>
+                <p>{item.next_due_date}</p>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
       )}
     </div>

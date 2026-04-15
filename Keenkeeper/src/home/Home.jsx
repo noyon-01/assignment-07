@@ -1,9 +1,25 @@
 import { FaPlus } from "react-icons/fa6";
 import { useLoaderData } from "react-router";
 import Card from "../components/Card";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const friends = useLoaderData();
+  const [friends, setFriends] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchFriends = async () => {
+      setLoading(true);
+
+      const res = await fetch("data.json");
+      const data = await res.json();
+
+      setFriends(data);
+      setLoading(false);
+    };
+
+    fetchFriends();
+  }, []);
 
   return (
     <div className="container mx-auto">
@@ -43,11 +59,19 @@ const Home = () => {
       <div className="w-9/12 mx-auto">
         <h3 className="text-2xl font-semibold mb-4">Your Friends</h3>
       </div>
-      <div className="w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-20">
-        {friends.map((friend) => (
-          <Card key={friend.id} friend={friend} />
-        ))}
-      </div>
+
+      {loading ? (
+        <div className="flex justify-center items-center h-60">
+          <span className="loading loading-spinner loading-lg"></span>
+        </div>
+      ) : (
+        <div className="w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-20">
+          {friends.map((friend) => (
+            <Card key={friend.id} friend={friend} />
+          ))}
+          setLoading(false)
+        </div>
+      )}
     </div>
   );
 };

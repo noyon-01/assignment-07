@@ -6,7 +6,7 @@
     "email": "aisha.patel@gmail.com",
     "days_since_contact": 18,
     "status": "almost due",
-    "tags": ["college", "close friend"],
+    "tags": ["college", "friend"],
     "bio": "Met during freshman orientation.",
     "goal": 14,
     "next_due_date": "2026-04-10"
@@ -54,7 +54,7 @@
     "email": "priya.nair@yahoo.com",
     "days_since_contact": 3,
     "status": "on_track",
-    "tags": ["work", "close friend"],
+    "tags": ["work", "friend"],
     "bio": "We joined the same company on the same day. ",
     "goal": 7,
     "next_due_date": "2026-04-20"
@@ -78,7 +78,7 @@
     "email": "yuki.tanaka@fastmail.com",
     "days_since_contact": 8,
     "status": "on_track",
-    "tags": ["close friend", "cooking"],
+    "tags": ["friend", "cooking"],
     "bio": "Moved in next door two years ago.",
     "goal": 10,
     "next_due_date": "2026-04-17"
@@ -90,7 +90,7 @@
     "email": "c.mendez@hotmail.com",
     "days_since_contact": 45,
     "status": "overdue",
-    "tags": ["high school", "sports"],
+    "tags": ["school", "sports"],
     "bio": "Best friend from high school football days.",
     "goal": 30,
     "next_due_date": "2026-04-01"
@@ -102,7 +102,7 @@
     "email": "nadia.kowalski@gmail.com",
     "days_since_contact": 14,
     "status": "on_track",
-    "tags": ["college", "study group"],
+    "tags": ["college", "study"],
     "bio": "Met in a brutal organic chemistry study group.",
     "goal": 14,
     "next_due_date": "2026-04-22"
@@ -114,7 +114,7 @@
     "email": "ethan.r@gmail.com",
     "days_since_contact": 2,
     "status": "almost due",
-    "tags": ["work", "close friend"],
+    "tags": ["work", "friend"],
     "bio": "Co-founded a side project together that never quite.",
     "goal": 7,
     "next_due_date": "2026-04-20"
