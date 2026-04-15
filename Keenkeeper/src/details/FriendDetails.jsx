@@ -5,6 +5,8 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { PiVideoCamera } from "react-icons/pi";
 import { MdOutlineTextsms } from "react-icons/md";
+import { useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
 const FriendDetails = () => {
   const { userId } = useParams();
@@ -13,7 +15,9 @@ const FriendDetails = () => {
   const expectedData = friendData.find(
     (friend) => friend.id === Number(userId),
   );
-  const { id, name, picture, tags, status, bio, email } = expectedData;
+  const { name, picture, tags, status, bio, email } = expectedData;
+  const { handleCallData, storedVideoData, handleTextData, handleVideoData } =
+    useContext(UserContext);
 
   return (
     <div className="w-8/12 mx-auto py-10 flex justify-between gap-5">
@@ -96,18 +100,27 @@ const FriendDetails = () => {
           </p>
 
           <div className="grid grid-cols-3 gap-4">
-            <div className="bg-[#F8FAFC] shadow rounded flex flex-col justify-center items-center p-4">
+            <button
+              onClick={() => handleCallData(expectedData)}
+              className="bg-[#F8FAFC] cursor-pointer shadow rounded flex flex-col justify-center items-center p-4"
+            >
               <BiSolidPhoneCall className="w-8 h-8" />
               <p className="text-lg font-medium">Call</p>
-            </div>
-            <div className="bg-[#F8FAFC] shadow rounded flex flex-col justify-center items-center p-4">
+            </button>
+            <button
+              onClick={() => handleTextData(expectedData)}
+              className="bg-[#F8FAFC] cursor-pointer shadow rounded flex flex-col justify-center items-center p-4"
+            >
               <MdOutlineTextsms className="w-8 h-8" />
               <p className="text-lg font-medium">Text</p>
-            </div>
-            <div className="bg-[#F8FAFC] shadow rounded flex flex-col justify-center items-center p-4">
+            </button>
+            <button
+              onClick={() => handleVideoData(expectedData)}
+              className="bg-[#F8FAFC] cursor-pointer shadow rounded flex flex-col justify-center items-center p-4"
+            >
               <PiVideoCamera className="w-8 h-8" />
               <p className="text-lg font-medium">Video</p>
-            </div>
+            </button>
           </div>
         </div>
       </div>
