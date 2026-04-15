@@ -1,6 +1,10 @@
 import { FaPlus } from "react-icons/fa6";
+import { useLoaderData } from "react-router";
+import Card from "../components/Card";
 
 const Home = () => {
+  const friends = useLoaderData();
+
   return (
     <div className="container mx-auto">
       <div className="text-center">
@@ -36,8 +40,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <h3>Your Friends</h3>
+      <div className="w-9/12 mx-auto">
+        <h3 className="text-2xl font-semibold mb-4">Your Friends</h3>
+      </div>
+      <div className="w-9/12 mx-auto grid grid-cols-4 gap-4 mb-20">
+        {friends.map((friend) => (
+          <Card key={friend.id} friend={friend} />
+        ))}
       </div>
     </div>
   );
