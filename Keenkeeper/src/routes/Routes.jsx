@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../home/Home";
 import Timeline from "../timeline/Timeline";
 import Starts from "../starts/Starts";
+import FriendDetails from "../details/FriendDetails";
+import Error from "../error/Error";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +24,11 @@ export const router = createBrowserRouter([
         path: "/starts",
         Component: Starts,
       },
+      {
+        path: "/friendDetails/:id",
+        Component: FriendDetails,
+      },
     ],
+    errorElement: <Error />
   },
 ]);
