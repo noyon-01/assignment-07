@@ -8,7 +8,7 @@ KeenKeeper helps you track your friendships. You can see all your friends in one
 
 ---
 
-### 3. Technologies Used:
+## 3. Technologies Used:
 
 - **React** — Building the user interface
 - **React Router** — Page navigation (Home, Timeline, Stats, Friend Details)
@@ -20,7 +20,7 @@ KeenKeeper helps you track your friendships. You can see all your friends in one
 
 ---
 
-#### 4. 3 Key Features
+## 4. 3 Key Features
 
 ### 1. Friend List & Details
 Browse all your friends on the Home page. Click any friend to see their profile — including days since last contact, relationship goal, bio, tags, and contact status.
